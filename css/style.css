@@ -1,0 +1,607 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none !important;
+}
+.btn-style{
+	background-color: #fe5c24;
+	border: none;
+	color: white;
+	padding: 14px 35px;
+	transition: 0.5s;
+}
+.btn-style:hover{
+	background-color: #2493e0;
+	transition: 0.5s;
+}
+/* **************************************
+		Header Section css code start
+*************************************** */
+.header-top{
+	width: 100%;
+	padding: 16px 0;
+	background-color: #eaefff;
+}
+.top-left span{
+	color: #fe5c24;
+}
+.top-left a{
+	margin-left: 30px;
+	color: #0c3e72;
+	transition: .3s;
+}
+.top-left a:hover{
+	color: #fe5c24;
+	transition: .3s;
+}
+.top-right{
+	text-align: right;
+	color: #0c3e72;
+}
+.top-right span i{
+	color: #fe5c24;
+}
+.social-icon{
+	display: inline-block;
+}
+.social-icon i:hover{
+	color: #fe5c24;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+/* header bottom css code start */
+
+.header-bottom .navbar-nav li a{
+	color: #0c3e72 !important;
+	padding: 15px 0;
+}
+.header-bottom .navbar-nav li a:hover{
+	color: #fe5c24 !important;
+}
+.d-flex button{
+	background-color: #fe5c24;
+
+}
+.dropdown-menu{
+	padding: 0;
+	margin: 0;
+}
+.dropdown-menu li a{
+	padding: 10px 10px 10px 15px !important;
+} 
+
+
+
+
+/* **************************************
+		Header Section css code End
+*************************************** */
+
+
+/* **************************************
+		Banner-1 Section css code Start
+*************************************** */
+.banner-1{
+	background: url('../img/banner-bg.png') no-repeat center scroll;
+	background-size: cover;
+	height: 100vh;
+}
+.banner-content{
+	display: flex;
+	align-items: center;
+	height: 100vh;
+}
+.banner-content h1{
+	font-size: 120px;
+	color: white;
+	line-height: 1.2;
+}
+.banner-content p{
+	font-size: 24px;
+	color: white;
+	margin-bottom: 30px;
+}
+.banner-content a{
+	display: inline-block;
+	color: white;
+	background-color: rgb(36, 147, 224);
+	padding: 23px 79px;
+	transition: 0.5s;
+	position: relative;
+	transition: 0.5s;
+	z-index: 9999;
+}
+/* .banner-content a:hover{
+	background-color: #fe5c24;
+	transition: 0.5s;
+} */
+.banner-content a::before{
+	content: '';
+	width: 0%;
+	position: absolute;
+	background-color: #fe5c24;
+	left: 50%;
+	right: 50%;
+	top: 0;
+	bottom: 0;
+	transition: 0.5s;
+	z-index: -1;
+	opacity: 0;
+}
+.banner-content a:hover::before{
+	left: 0;
+	right: 0;
+	width: 100%;
+	opacity: 1;
+}
+/* **************************************
+		Banner-1 Section css code End
+*************************************** */
+
+/* **************************************
+		Booking-menu Section css code Start
+*************************************** */
+.booking-menu{
+	margin-bottom: 150px;
+	margin-top: -73px;
+}
+.booking-menu ul{
+	margin-bottom: 0;
+}
+.booking-menu select{
+	background: none;
+}
+.booking-tab{
+	background-color: white;
+}
+.booking-tab ul li{
+	display: inline-block;
+	padding: 25px 14px;
+	cursor: pointer;
+	margin: 0 10px;
+	position: relative;
+}
+.line{
+	width: 100%;
+	height: 3px;
+	background-color: #2493e0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.tab-item{
+	box-shadow:  0px 10px 40px 0px rgb(221 221 221 / 30%);
+	padding: 40px;
+	margin: 0;
+	background-color: white;
+}
+.form-field{
+	padding: 14px;
+	border: 1px solid rgb(36, 147, 224);
+	color: rgb(36, 147, 224);
+}
+.w-20{
+	width: 20%;
+}
+.form-field:focus{
+	outline: none;
+}
+
+.date-box{
+	position: relative;
+}
+.date-box i{
+	position: absolute;
+	right: 10px;
+	font-size: 20px;
+	top: 15px;
+	color: rgb(36, 147, 224);
+}
+.w-1{
+	width: 100%;
+	padding: 13px;
+}
+/* **************************************
+		Booking-menu Section css code End
+*************************************** */
+
+
+/* **************************************
+		places Section css code Start
+*************************************** */
+.places{
+	margin-bottom: 50px;
+}
+.place-content{
+		text-align: center;
+		margin-bottom: 60px;
+}
+.place-content h2{
+	color: #0c3e72;
+	font-size: 46px;
+	margin-bottom: 26px;
+}
+.place-content p{
+	color: #777;
+	padding: 0 30px;
+	line-height: 28px;
+}
+
+.place-item{
+	position: relative;
+}
+.place-item img{
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+}
+.place-item{
+	position: relative;
+	transition: 0.5s;
+	margin-bottom: 20px;
+	margin: 5px 5px 25px 5px;
+}
+.place-item::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: #0c3e72;
+	opacity: 0;
+	transition: 0.5s;
+}
+.place-item:hover::after{
+	opacity: 0.55;
+	transition: 0.5s;
+}
+.place-item:hover .img-content{
+	opacity: 1;
+	z-index: 9999;
+	transform: translateY(-10px);
+	transition: 0.5s;
+}
+
+.img-content{
+	position: absolute;
+	bottom: 60px;
+	left: 40px;
+	opacity: 0;
+	transition: 0.5s;
+}
+.img-content a{
+	display: inline-block;
+	margin-bottom: 30px;
+	color: white;
+}
+.img-content h3{
+	font-size: 30px;
+}
+.reviwe-icon{
+	position: relative;
+}
+.reviwe-icon i{
+	color: #fe5c24;
+}
+.reviwe-icon::before{
+	content: '\f14d';
+	font-family: "Font Awesome 6 Free";
+	position: absolute;
+	right: -200px;
+	bottom: 10px;
+	font-size: 25px;
+	background-color: rgba(255,255,255,.5);
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 50px;
+}
+
+
+/* **************************************
+		places Section css code End
+*************************************** */
+
+/* **************************************
+		Discover button Section css code Start
+*************************************** */
+
+.discover{
+	margin-bottom: 100px;
+}
+
+/* **************************************
+		Discover button Section css code End
+*************************************** */
+
+
+/* **************************************
+		Event Section css code End
+*************************************** */
+
+.event{
+	background: url('../img/event-bg.png') no-repeat center scroll;
+	background-size: cover;
+	padding-top: 150px;
+	padding-bottom: 100px;
+	position: relative;
+	margin-bottom: 100px;
+}
+
+.event-contant{
+	background-color: white;
+	padding: 60px;
+	margin: 60px;
+}
+.event-contant span{
+	color: #fe5c24;
+	line-height: 3;
+}
+.event-contant h2{
+	font-size: 44px;
+	color: #0c3e72;
+	margin-bottom: 25px;
+}
+.event-contant p{
+	color: #848484;
+	padding: 0;
+	margin: 0;
+}
+.event-title p span{
+	color: #0c3e72;
+}
+.event-title p span i{
+	color: #ffc962;
+}
+.event-btn{
+	margin-top: 30px;
+}
+.owl-theme .owl-dots{
+  display: none;
+}
+
+
+.owl-prev{
+	position: absolute;
+	color: #fe5c24 !important;
+	font-size: 100px !important;
+	top: 35%;
+	left: -40px;
+}
+.owl-next{
+	position: absolute;
+	color: #fe5c24 !important;
+	font-size: 100px !important;
+	top: 35%;
+	right: -40px;
+}
+
+/* **************************************
+		Event Section css code End
+*************************************** */
+/* **************************************
+		Restaurant Section css code Start
+*************************************** */
+
+.restaurants{
+	margin-bottom: 100px;
+}
+.restaurants-title{
+	margin-bottom: 50px;
+}
+.restaurants-title h2{
+	font-size: 44px;
+	color: #0c3e72;
+	margin-bottom: 25px;
+}
+.restaurants-title p{
+	color: #848484;
+	padding: 0;
+	margin: 0;
+}
+.hotel-1{
+	margin: 10px;
+}
+.hotel-1 h3{
+	color: #0c3e72;
+	font-size: 24px;
+	margin: 20px 0;
+}
+.hotel-1 p i{
+	color: #ffc962;
+}
+.p-content{
+	color: #a2a2a2;
+	font-weight: 500;
+	font-size: 18px;
+}
+.d-500{
+	color: #fe5c24;
+}
+.hotel-1 img{
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+}
+
+/* **************************************
+		Restaurant Section css code End
+*************************************** */
+
+/* **************************************
+		User-content Section css code End
+*************************************** */
+.users{
+	background-color: #0c3e72;
+	padding: 100px 0;
+	margin-bottom: 100px;
+}
+.user-title h2{
+	font-size: 46px;
+	margin-bottom: 70px;
+}
+.user-content{
+	background-color: #0e477d;
+}
+.user-content p{
+	padding: 0 25px;
+	font-size: 18px;
+}
+.user-content span{
+	padding: 0 25px;
+	font-size: 18px;
+}
+.rating{
+	color: #ffc962;
+	margin: 15px 0 25px 0;
+	padding: 0 25px;
+}
+.users .owl-nav{
+	position: absolute;
+	top: -200px;
+	right: 75px;
+}
+
+/* **************************************
+		User-content Section css code End
+*************************************** */
+
+/* **************************************
+		Services Section css code End
+*************************************** */
+
+
+.services{
+	margin-bottom: 100px;
+}
+.services-title h2{
+	font-size: 44px;
+	color: #0c3e72;
+	font-weight: 600;
+}
+
+.services-title p{
+	color: #848484;
+	padding: 0;
+	font-size: 18px;
+	margin-bottom: 70px;
+}
+.services-1 h3{
+	color: #0c3e72;
+	font-size: 24px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+.services-1 p{
+	color: #848484;
+	font-size: 18px;
+}
+
+/* **************************************
+		Services Section css code End
+*************************************** */
+
+
+/* **************************************
+		Footer Section css code Start
+*************************************** */
+
+footer{
+	background-color:#162B45;
+	padding-top: 120px;
+	padding-bottom: 80px;
+}
+.footer-title h5{
+	margin-bottom: 60px;
+}
+.f-content{
+	padding-left: 0 !important;
+	line-height: 1.9;
+}
+.f-content li a{
+	color: white;
+	transition: 0.4s;
+}
+.f-content li a:hover{
+	color: #fe5c24;
+	transition: 0.4s;
+}
+.input-email input{
+	background-color: #092742;
+	border: none;
+	padding: 12px 15px;
+	color: white;
+}
+.input-email input:focus{
+	outline: none;
+}
+.input-email input::placeholder{
+	color: #848484;
+}
+.input-email i{
+	width: 55px;
+	text-align: center;
+	background-color: #fe5c24;
+	height: 46px;
+	line-height: 47px;
+	color: white;
+	cursor: pointer;
+}
+.email-para{
+	margin-top: 30px;
+	font-size: 18px;
+	padding-right: 34px;
+}
+.contact-text{
+	font-size: 18px;
+}
+.contact-email p{
+	color: #fe5c24;
+	margin-top: 28px;
+	margin-bottom: 28px;
+}
+.contact-email i{
+	color: white;
+	margin-right: 20px;
+	transition: 0.4s;
+	cursor: pointer;
+}
+.contact-email i:hover{
+	color: #fe5c24;
+	transition: 0.4s;
+}
+
+
+/* **************************************
+		Footer Section css code End
+*************************************** */
+
+
+.end{
+	background-color: #08223a;
+	padding-top: 35px;
+	padding-bottom: 20px;
+}
+.footer-end p{
+	color: #777;
+	font-size: 18px;
+}
+.footer-end i{
+	color: red;
+}
+.footer-end span{
+	color: #fe5c24;
+}
