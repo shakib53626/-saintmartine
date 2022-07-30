@@ -131,8 +131,8 @@ a{
 	background-color: #fe5c24;
 	left: 50%;
 	right: 50%;
-	top: 0;
-	bottom: 0;
+	top: 50%;
+	bottom: 50%;
 	transition: 0.5s;
 	z-index: -1;
 	opacity: 0;
@@ -140,6 +140,8 @@ a{
 .banner-content a:hover::before{
 	left: 0;
 	right: 0;
+	top: 0;
+	bottom: 0;
 	width: 100%;
 	opacity: 1;
 }
