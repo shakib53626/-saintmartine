@@ -365,6 +365,9 @@ Banner-1 Section Responsive code Start
 	.event-contant{
 		width: 430px;
 	}
+	.event .owl-nav{
+		display: none !important;
+	}
 }
 @media screen and (max-width: 575px) {
 	.event{
