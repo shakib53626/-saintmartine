@@ -51,6 +51,7 @@ a{
 }
 .social-icon{
 	display: inline-block;
+	margin-right: 35px;
 }
 .social-icon i:hover{
 	color: #fe5c24;
@@ -60,24 +61,50 @@ a{
 
 /* header bottom css code start */
 
-.header-bottom .navbar-nav li a{
+.collapse ul li a{
 	color: #0c3e72 !important;
-	padding: 15px 0;
 }
-.header-bottom .navbar-nav li a:hover{
+.collapse ul li a:hover{
 	color: #fe5c24 !important;
 }
-.d-flex button{
-	background-color: #fe5c24;
+.nav-item i{
+	font-size: 12px;
+}
+.drop-menu{
+	background-color: #fff;
+	padding-left: 0;
+	position: absolute;
+	width: 120px;
+	opacity: 0;	
+	padding-top: 20px;
 
+
+	transform: scale(1, 0);
+	transform-origin: top;
+	transition: 0.5s;
+	z-index: 999;
 }
-.dropdown-menu{
-	padding: 0;
-	margin: 0;
+.nav-item ul li:hover{
+	background-color: #e8e8e4;
 }
-.dropdown-menu li a{
-	padding: 10px 10px 10px 15px !important;
-} 
+.nav-item ul li a{
+	padding: 5px 50px 5px 20px;
+	display: inline-block;
+}
+.nav-item{
+	position: relative;
+}
+.nav-item:hover .drop-menu{
+	opacity: 1;	
+	transform: scale(1);
+	transition: 0.5s;
+}
+.header-bottom hr{
+	display: none;
+}
+.booking-btn{
+	display: none;
+}
 
 
 
@@ -416,6 +443,7 @@ a{
 }
 .hotel-1{
 	margin: 10px;
+	position: relative;
 }
 .hotel-1 h3{
 	color: #0c3e72;
@@ -438,6 +466,44 @@ a{
 	width: 100%;
 	height: auto;
 }
+.img-icon{
+	position: absolute;
+	right: 25px;
+	top: 25px;
+}
+.img-icon i{
+	display: block;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 100%;
+	background-color: rgba(255,122,75,.7);
+	margin-bottom: 2px;
+	color: white;
+	font-size: 18px;
+}
+.fa-share-from-square{
+	background-color: rgba(255,255,255,.5) !important;
+	color: black !important;
+}
+.img-icon .soc-icon{
+	transform: scaleY(0);
+	transition: 0.5s;
+}
+.img-icon:hover .soc-icon{
+	transform: scaleY(1);
+	transition: 0.5s;
+}
+.img-icon .fa-share-from-square{
+	transform: scaleX(1);
+	transition: 0.5s;
+}
+.img-icon:hover .fa-share-from-square{
+	transform: scaleX(0);
+	transition: 0.5s;
+}
+
 
 /* **************************************
 		Restaurant Section css code End
@@ -525,6 +591,9 @@ footer{
 	background-color:#162B45;
 	padding-top: 120px;
 	padding-bottom: 80px;
+}
+footer hr{
+	display: none;
 }
 .footer-title h5{
 	margin-bottom: 60px;
