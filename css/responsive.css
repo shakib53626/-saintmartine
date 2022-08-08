@@ -384,6 +384,9 @@ Banner-1 Section Responsive code Start
 		bottom: -400px;
 		right: 200px;
 	}
+	.event .owl-nav{
+		display: none !important;
+	}
 
 }
 @media screen and (max-width: 513px) {
