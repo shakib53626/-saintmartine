@@ -1,0 +1,77 @@
+/* *************************************************
+****************************************************
+****************************************************
+					About Section Css Code Start
+****************************************************
+****************************************************
+**************************************************** */
+
+
+
+/* *************************************************
+				About logo secton css code start
+*************************************************** */
+
+.about{
+	background: url('../img/about.png') no-repeat center scroll;
+	background-size: cover;
+	position: relative;
+	margin-bottom: 120px;
+}
+.about-overflow{
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 120px 0;
+}
+.about-content{
+	text-align: center;
+}
+.about-content h1{
+	font-size: 80px;
+	color: white;
+	line-height: 1.2;
+	font-weight: 700;
+}
+.about-content p{
+	font-size: 24px;
+	color: white;
+	margin-bottom: 30px;
+	font-weight: 600;
+}
+
+/* *************************************************
+				About logo secton css code End
+*************************************************** */
+
+/* *************************************************
+				discover-around secton css code start
+*************************************************** */
+
+.discover-around{
+	margin-bottom: 120px;
+}
+.w-100{
+	width: 100%;
+}
+.world-content{
+	margin-top: 80px;
+	margin-left: 20px;
+}
+.world-content h2{
+	font-size: 46px;
+	line-height: 56px;
+	margin-bottom: 20px;
+	font-weight: 600;
+	color: #0c3e72;
+}
+.world-content p{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #a2a2a2;
+	line-height: 28px;
+	padding-right: 80px;
+}
+
+/* *************************************************
+				discover-around secton css code End
+*************************************************** */
+

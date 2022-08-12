@@ -105,6 +105,9 @@ a{
 .booking-btn{
 	display: none;
 }
+.nav-item .active{
+	color: #fe5c24 !important;
+}
 
 
 
@@ -676,3 +679,11 @@ footer hr{
 .footer-end span{
 	color: #fe5c24;
 }
+
+
+
+
+
+
+
+
